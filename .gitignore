@@ -1,3 +1,10 @@
+# my ignore
+.secrets/
+cache/
+settings.json
+cache.json
+*.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
