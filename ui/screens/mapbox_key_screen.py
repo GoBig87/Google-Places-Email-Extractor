@@ -164,6 +164,7 @@ class MapboxKeyScreen(Screen):
         if self.mapbox_key:
             with open(".secrets/mapboxkey", "w") as f:
                 f.write(self.mapbox_key)
+            App.get_running_app().mapbox_key = self.mapbox_key
             App.get_running_app().content.current = "main"
 
     def settings_screen(self):

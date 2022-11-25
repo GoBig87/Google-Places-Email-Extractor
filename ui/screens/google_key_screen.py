@@ -159,6 +159,7 @@ class GoogleKeyScreen(Screen):
         if self.google_key:
             with open(".secrets/googlekey", "w") as f:
                 f.write(self.google_key)
+            App.get_running_app().google_key = self.google_key
             App.get_running_app().content.current = "mapboxkey"
 
     def settings_screen(self):

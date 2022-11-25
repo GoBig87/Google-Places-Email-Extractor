@@ -148,7 +148,7 @@ class MenuWidget(AnchorLayout):
     inactive_color = ListProperty([147/255, 147/255, 147/255, 1])
     search_radius = NumericProperty()
     file_name = StringProperty()
-    search_term = StringProperty()
+    search_term = StringProperty("")
     search_started = BooleanProperty(False)
 
     def __init__(self, **kwargs):
@@ -221,7 +221,7 @@ class MenuWidget(AnchorLayout):
             self.search_ready = False
 
     def handle_search_field(self):
-        self.search_field = self.ids.search_field.text
+        self.search_term = self.ids.search_field.text
 
     def set_polygon_active(self, polygon):
         self.selected_polygon = polygon

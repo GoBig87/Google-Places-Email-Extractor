@@ -148,7 +148,7 @@ class SearchDialogContent(BoxLayout):
         search_places(
             search_points,
             search_radius,
-            keyword="",  # TODO ADD Keyword
+            keyword=self.get_menu().search_term,
             key=App.get_running_app().google_key,
             gui_update=self.set_gui,
             request_cancel=self.cancel_search,
