@@ -84,6 +84,8 @@ Once the search has finished (or canceled) the result file will be saved into a 
 # Gui Params
 Toggle light or dark mode.  Some GUI widgets get stuck when toggle switching.  Restarting the app fixes the issue.
 
+![Screenshot from 2022-11-25 13-26-20](https://user-images.githubusercontent.com/39137894/204056793-50c18387-a924-44e5-a41f-8ff7ee63a9a6.png)
+
 # API Keys
 API keys can be updated/changed by clicking on the pencil
 
