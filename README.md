@@ -32,6 +32,10 @@ which can be found here https://developers.google.com/maps/documentation/places/
 On the initial app launch, a screen will ask for your API key.  Paste it into the text field and click |
 save.  Keys will be stored in ./.secrets/googlekey
 
+WARNING!  This is VERY VERY dangerous.  You should never blindly import API keys into an application you do not trust.  
+This is all written in python and you can follow where the key is all stored and used.  To be super safe between uses 
+you should delete or regenerate keys between uses to limit the possibility of API keys being leaked.  
+
 ![Screenshot from 2022-11-25 12-37-24](https://user-images.githubusercontent.com/39137894/204053386-62bffb82-04f6-497f-bd2c-60a19345ece2.png)
 WARNING! Be sure to fully read the terms of service and understand the billing criteria. 
 Any Google Places API data CANNOT be stored or cached other than the places ID.  Emails are obtained through scrapping
